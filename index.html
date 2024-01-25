@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link href="https://mediceram.com.my/wp-content/uploads/2018/06/logo_medi_handv2-100x100.png" rel="icon">
+
+
+ </head>
+
+
+  <title>RIYAD HOSSAIN</title>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Attendance</header>
+  <ul>
+<li><a href="#"><i class="fas fa-clock"></i>Daily Attebdance</a></li>
+<li><a href="Data1.html"><i class="fas fa-stream"></i>Database</a></li>
+</ul>
+</div>
+<Style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+       iframe{
+            width: 100%;
+            height: 100%;
+        }
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+section{
+ // background: url(home.PNG) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+
+
+
+
+footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 11px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+    }
+    
+    footer p {
+        margin: 10px 0;
+    }
+    
+    footer i {
+        color: red;
+    }
+    
+    footer a {
+        color: #3c97bf;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+ #ph-standard-time{
+  
+
+  color:#000; 
+  opacity:15; 
+  font: sans-serif;
+  font-size:2.5rem; 
+  line-height:1.5rem;
+  text-align:center;
+   
+   letter-spacing: 1px;
+}
+
+#clockbox, #info{
+color:#000; 
+opacity:15; 
+font-size:1.5rem; 
+line-height:0.85rem;
+text-align:center;
+ 
+ letter-spacing: 1px;
+}
+
+body{
+        font-size: 1.05rem;
+        font-family: Serif,Cambria;
+        min-height:10vh; 
+        display: grid;
+        place-items: top;
+        top: 50%;
+        background-color: #92a8d1;
+       
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;  
+      }
+
+footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 11px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+    }
+    
+    footer p {
+        margin: 10px 0;
+    }
+    
+    footer i {
+        color: red;
+    }
+    
+    footer a {
+        color: #3c97bf;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+ #ph-standard-time{
+  
+
+  color:white; 
+  opacity:15; 
+  font: sans-serif;
+  font-size:2.5rem; 
+  line-height:1.5rem;
+  text-align:center;
+   
+   letter-spacing: 1px;
+}
+
+#clockbox, #info{
+color:white; 
+opacity:15; 
+font-size:1.5rem; 
+line-height:0.85rem;
+text-align:center;
+ 
+ letter-spacing: 1px;
+}
+</Style>
+<section>
+
+<iframe
+        id="netlify" 
+        src="https://script.google.com/macros/s/AKfycbwntPCl1Is2RKgXiCxZ9aJPQwPyvYj3JbK0BilMiNV4/exec" 
+        frameborder="0"
+        scrolling="no"></iframe>
+</section>
+
+
+
+
+
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+<footer>
+
+
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://wa.me/+60143719822">RIYAD HOSSAIN</a>
+		- Visit our channel to see another magnificent content
+		<a target="_blank" href="https://riyad-profile.netlify.app/">here</a>.
+	</p>
+</footer>
+</html>
